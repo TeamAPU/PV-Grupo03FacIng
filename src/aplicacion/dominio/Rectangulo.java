@@ -50,7 +50,8 @@ public class Rectangulo {
 
    
     public int posicionPuntos(int x,int y){
-                
+        
+        
         return 0;
     }
 
