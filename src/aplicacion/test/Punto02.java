@@ -40,6 +40,7 @@ public class Punto02 {
         //Muestra resultados en pantalla
         System.out.println("La superficie es: " + unlado.superficieRectangulo());
         System.out.println("El perimetro es: " + unlado.perimetroRectangulo());
+        unlado.posicionPuntos(unpunto.getX(),unpunto.getY());
     }
     
 }
