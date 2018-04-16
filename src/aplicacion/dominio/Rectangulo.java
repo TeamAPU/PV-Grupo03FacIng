@@ -5,6 +5,8 @@
  */
 package aplicacion.dominio;
 
+import aplicacion.util.ArregloDePuntos;
+
 /**
  *
  * @author David
@@ -49,10 +51,18 @@ public class Rectangulo {
     } 
 
    
-    public int posicionPuntos(int x,int y){
+    public void posicionPuntos(int x,int y){
+        Punto puntoUno = new Punto(x, (int) (y+altura));
+        Punto puntoDos = new Punto((int)(x+base),(int)(y+altura));
+        Punto puntoTres = new Punto((int) (x+base),y);
         
+        ArregloDePuntos arregloDePuntos = new ArregloDePuntos();
         
-        return 0;
+        arregloDePuntos.getPuntosCuadrados()[0] = puntoUno;
+        arregloDePuntos.getPuntosCuadrados()[1] = puntoDos;
+        arregloDePuntos.getPuntosCuadrados()[2] = puntoTres;
+        
+        arregloDePuntos.mostrarArreglo();
     }
 
     
