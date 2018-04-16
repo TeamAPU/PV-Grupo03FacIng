@@ -29,7 +29,7 @@ public void mostrarArreglo(){
             if(puntosCuadrados[i] != null){
                
                 Punto c = puntosCuadrados[i];
-                System.out.println("Puntos: "+c.getX()+","+c.getY());
+                System.out.println("Puntos "+i+": "+c.getX()+","+c.getY());
             }else{
                 System.out.println("No existe"+i);
             }    
