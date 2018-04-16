@@ -1,4 +1,8 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package aplicacion.util;
 
 import aplicacion.dominio.Libro;
@@ -21,26 +25,24 @@ public class Busqueda {
         this.libros = libros;
     }
     
-    
     public void agregar(Libro libro){
         this.libros.add(libro);
         
     }
-    
-    /**
-     * muestra la lista de libros
-     */
     public void mostrarlibros(){
         
-        for (Libro l : libros) {
-            l.mostrarDatos();
+        for (int i=0; i<libros.size();i++) {
+            libros.get(i).mostrarDatos();
         }
     }
-    /**
-     * busqueda por titulo
-     * @param buscar
-     * @return 
-     */
+    
+     public void mostrarlibrosC(){
+        
+        for (int i=0; i<libros.size();i++) {
+            libros.get(i).mostrarDatosC();
+        }
+    }
+    
     public int buscar(String buscar){
          int indice=0, encontrado=-1;
         
@@ -58,9 +60,7 @@ public class Busqueda {
         return encontrado;
         
     }
-    /*
-    muestra libro encontrado
-    */
+    
     public void mostrarEncontrado(int indice){
         if(indice==-1){
             System.out.println("Libro no encontrado"); 
