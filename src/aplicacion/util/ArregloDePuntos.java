@@ -26,10 +26,11 @@ public class ArregloDePuntos {
     }
 public void mostrarArreglo(){
         for(int i=0;i < puntosCuadrados.length;i++){
+            
             if(puntosCuadrados[i] != null){
                
                 Punto c = puntosCuadrados[i];
-                System.out.println("Puntos "+i+": "+c.getX()+","+c.getY());
+                System.out.println("Punto "+i+": "+c.getX()+","+c.getY());
             }else{
                 System.out.println("No existe"+i);
             }    
