@@ -14,7 +14,7 @@ import java.util.Scanner;
  *
  * @author David
  */
-public class Punto6v2 {
+public class Punto6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Rectangulo rec1 = new Rectangulo(1,2);
