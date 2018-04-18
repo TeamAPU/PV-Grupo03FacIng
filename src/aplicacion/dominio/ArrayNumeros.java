@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aplicacion.dominio;
+/**package aplicacion.dominio;
 
 /**
  *
  * @author Carolina
  */
-public class ArrayNumeros {
+/**public class ArrayNumeros {
     private int arregloNumeros[];
     
     public ArrayNumeros(){
