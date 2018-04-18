@@ -15,6 +15,7 @@ public class Rectangulo {
     
     private double base;
     private double altura;
+    private final Punto punto = new Punto();
 
     public Rectangulo(double base, double altura) {
         this.base = base;
@@ -64,8 +65,15 @@ public class Rectangulo {
         
         arregloDePuntos.mostrarArreglo();
     }
-
-    
+    public void unPuntoCuadrado(int x,int y){
+        punto.setXY(x, y);
+        
+    }
+    public void mostraPunto(){
+        ArregloDePuntos arregloDePuntos = new ArregloDePuntos();
+        arregloDePuntos.getPuntosCuadrados()[0] = punto;
+        arregloDePuntos.mostrarUnArreglo();
+    }
     
     
 }

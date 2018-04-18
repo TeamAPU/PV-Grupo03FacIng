@@ -5,7 +5,6 @@
  */
 package aplicacion.test;
 
-import aplicacion.dominio.ArrayNumeros;
 import aplicacion.dominio.ArregloDeNumero;
 import java.util.Scanner;
 

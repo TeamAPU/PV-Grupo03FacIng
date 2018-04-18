@@ -5,24 +5,29 @@
  */
 package aplicacion.test;
 
-import aplicacion.dominio.Rectangulo6;
+import aplicacion.dominio.Rectangulo;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
  *
- * @author Ma Ry Youkai
+ * @author David
  */
-public class Punto6 {
+public class Punto6v2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Rectangulo6 rec1 = new Rectangulo6(1,1,2,3);
-        Rectangulo6 rec2 = new Rectangulo6(2,1,4,5);
-        Rectangulo6 rec3 = new Rectangulo6(1,3,3,4);
-        Rectangulo6 rec4 = new Rectangulo6(2,1,2,5);
-        Rectangulo6 rec5 = new Rectangulo6(1,3,6,3);
-        
-        ArrayList<Rectangulo6> rectangulos = new ArrayList();
+        Rectangulo rec1 = new Rectangulo(1,2);
+        Rectangulo rec2 = new Rectangulo(4,5);
+        Rectangulo rec3 = new Rectangulo(3,4);
+        Rectangulo rec4 = new Rectangulo(2,5);
+        Rectangulo rec5 = new Rectangulo(6,3);
+        rec1.unPuntoCuadrado(1, 2);
+        rec2.unPuntoCuadrado(1, 3);
+        rec3.unPuntoCuadrado(1, 4);
+        rec4.unPuntoCuadrado(1, 5);
+        rec5.unPuntoCuadrado(1, 6);
+        ArrayList<Rectangulo> rectangulos = new ArrayList();
         
         rectangulos.add(rec1);
         rectangulos.add(rec2);
@@ -31,14 +36,14 @@ public class Punto6 {
         rectangulos.add(rec5);
         
         
-        for (Rectangulo6 r : rectangulos) {
+        for (Rectangulo r : rectangulos) {
           System.out.println("***************************************");
           System.out.println("Rectangulo en la posicion: "+rectangulos.indexOf(r));
-          System.out.println("Las coordenadas del punto son: "+r.getX()+","+r.getY()); 
+          r.mostraPunto();
           System.out.println("La base del rectangulo es: "+r.getBase());
           System.out.println("La altura del rectangulo es: "+r.getAltura());
-          System.out.println("El perimetro del rectangulo es: "+r.getPerimetro());
-          System.out.println("El area del rectangulo es: "+r.getArea());  
+          System.out.println("El perimetro del rectangulo es: "+r.perimetroRectangulo());
+          System.out.println("El area del rectangulo es: "+r.superficieRectangulo());  
         }
        System.out.println("***************************************");    
         
@@ -47,14 +52,15 @@ public class Punto6 {
         rectangulos.remove(indice);
         
         
-        for (Rectangulo6 r : rectangulos) {
+        for (Rectangulo r : rectangulos) {
           System.out.println("***************************************");
           System.out.println("Rectangulo en la posicion: "+rectangulos.indexOf(r));
-          System.out.println("Las coordenadas del punto son: "+r.getX()+","+r.getY()); 
+          System.out.println("Las coordenadas del punto son: " );
+          r.mostraPunto();
           System.out.println("La base del rectangulo es: "+r.getBase());
           System.out.println("La altura del rectangulo es: "+r.getAltura());
-          System.out.println("El perimetro del rectangulo es: "+r.getPerimetro());
-          System.out.println("El area del rectangulo es: "+r.getArea());  
+          System.out.println("El perimetro del rectangulo es: "+r.perimetroRectangulo());
+          System.out.println("El area del rectangulo es: "+r.superficieRectangulo());  
         }
         System.out.println("***************************************");    
        

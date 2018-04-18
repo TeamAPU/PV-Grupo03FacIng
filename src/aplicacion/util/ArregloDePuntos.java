@@ -24,7 +24,7 @@ public class ArregloDePuntos {
     public void setPuntosCuadrados(Punto[] puntosCuadrados) {
         this.puntosCuadrados = puntosCuadrados;
     }
-public void mostrarArreglo(){
+    public void mostrarArreglo(){
         for(int i=0;i < puntosCuadrados.length;i++){
             
             if(puntosCuadrados[i] != null){
@@ -37,5 +37,13 @@ public void mostrarArreglo(){
             
         }
     }
+    public void mostrarUnArreglo(){
+        
+               
+             Punto c = puntosCuadrados[0];
+             System.out.println("Punto: "+c.getX()+","+c.getY());
+            
+            
+        }
+    }
     
-}
